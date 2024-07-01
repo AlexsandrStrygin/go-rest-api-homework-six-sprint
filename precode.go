@@ -40,7 +40,7 @@ var tasks = map[string]Task{
 }
 
 // Ниже напишите обработчики для каждого эндпоинта
-// обработка для получения всех задач
+// обработчик для получения всех задач
 func getTasks(w http.ResponseWriter, r *http.Request) {
         resp, err := json.Marshal(tasks)
         if err != nil{
